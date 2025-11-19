@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahson Mahmood - Odoo Developer & App Creator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Smooth floating for hero image */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .float-slow {
+            animation: floatSlow 9s ease-in-out infinite;
+        }
+
+        /* Fade-in for hero text + stats */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 backdrop-blur-lg bg-white/80 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                        Ahson Mahmood
+                    </span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#home" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300">Home</a>
+                    <a href="#apps" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300">Apps</a>
+                    <a href="#services" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300">Services</a>
+                    <a href="#skills" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300">Skills</a>
+                    <a href="#about" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300">Contact</a>
+                </div>
+                <button class="hidden md:block px-6 py-2 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition-colors duration-300">
+                    Let's work together
+                </button>
+                <button class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left side -->
+                <div class="fade-in-up">
+                    <div class="inline-block mb-4">
+                        <span class="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium">
+                            💼 Odoo Apps Author
+                        </span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Odoo Developer &
+                        <span class="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                            App Creator
+                        </span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-6 leading-relaxed">
+                        I build practical Odoo applications and custom ERP solutions for real businesses.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Author of Odoo Apps like <strong>Google Reviews Snippet</strong>,
+                        <strong>Website COD Payment</strong>, <strong>Dynamic Label Studio</strong>,
+                        <strong>Journal Entry Report</strong>, <strong>Live Log Viewer</strong> and more.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-8 text-sm">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-gray-700">Odoo Apps Author</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-gray-700">Custom Modules (v15–19)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-gray-700">Website, Accounting & Tools</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-gray-700">Deployment & Support</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="tel:+923213412412" class="px-8 py-4 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            📞 +92 321 3412412
+                        </a>
+                        <a href="mailto:info@ahsonmahmood.com" class="px-8 py-4 bg-white text-gray-700 rounded-lg font-semibold hover:bg-gray-50 transition-all duration-300 border border-gray-200 shadow-sm">
+                            ✉️ Email Me
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right side image -->
+                <div class="relative flex justify-center md:justify-end">
+                    <img
+                        src="https://i.ibb.co/Z6zSxKwf/file-1-removebg-preview.png"
+                        alt="Ahson Mahmood - Odoo Developer"
+                        class="w-[420px] md:w-[520px] h-auto drop-shadow-2xl float-slow mx-auto md:ml-8"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Apps Section -->
+    <section id="apps" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mb-4"></div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Featured Odoo Apps</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    A selection of modules published on the official Odoo Apps Store.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- App 1: Google Reviews Snippet -->
+                <div class="group relative bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-amber-500 text-white rounded-full text-xs font-bold">$10</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-xl mb-6 flex items-center justify-center text-white text-2xl">
+                        ⭐
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Google Reviews Snippet</h3>
+                    <p class="text-gray-700 mb-4">
+                        Display real Google reviews on your Odoo website with live & cached modes.
+                    </p>
+                    <a href="https://apps.odoo.com/apps/modules/19.0/website_google_reviews_snippet"
+                       target="_blank"
+                       class="inline-flex items-center text-amber-700 font-semibold hover:text-amber-800 transition-colors">
+                        View on Odoo Apps
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- App 2: Website COD Payment -->
+                <div class="group relative bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-indigo-500 text-white rounded-full text-xs font-bold">$10</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-xl mb-6 flex items-center justify-center text-white text-2xl">
+                        💳
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Website COD Payment</h3>
+                    <p class="text-gray-700 mb-4">
+                        Smart cash-on-delivery payment method with order limits and configuration for Odoo eCommerce.
+                    </p>
+                    <a href="https://apps.odoo.com/apps/modules/19.0/website_sale_cod_simple_auto"
+                       target="_blank"
+                       class="inline-flex items-center text-indigo-700 font-semibold hover:text-indigo-800 transition-colors">
+                        View on Odoo Apps
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- App 3: Journal Entry Report -->
+                <div class="group relative bg-gradient-to-br from-emerald-100 to-teal-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-green-500 text-white rounded-full text-xs font-bold">FREE</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-xl mb-6 flex items-center justify-center text-white text-2xl">
+                        📄
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Journal Entry Report</h3>
+                    <p class="text-gray-700 mb-4">
+                        Professional PDF print for journal entries with a clean, branded layout.
+                    </p>
+                    <a href="https://apps.odoo.com/apps/modules/19.0/ahm_journal_entry_report"
+                       target="_blank"
+                       class="inline-flex items-center text-teal-700 font-semibold hover:text-teal-800 transition-colors">
+                        View on Odoo Apps
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- App 4: Digi Dokan Connector -->
+                <div class="group relative bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-purple-500 text-white rounded-full text-xs font-bold">FREE</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-xl mb-6 flex items-center justify-center text-white text-2xl">
+                        📦
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Digi Dokan Connector</h3>
+                    <p class="text-gray-700 mb-4">
+                        Website snippet that lets customers track parcels via Digi Dokan from your Odoo website.
+                    </p>
+                    <a href="https://apps.odoo.com/apps/modules/17.0/snippets"
+                       target="_blank"
+                       class="inline-flex items-center text-purple-700 font-semibold hover:text-purple-800 transition-colors">
+                        View on Odoo Apps
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- App 5: Dynamic Label Studio -->
+                <div class="group relative bg-gradient-to-br from-rose-100 to-red-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-rose-500 text-white rounded-full text-xs font-bold">$49.99</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-rose-400 to-red-500 rounded-xl mb-6 flex items-center justify-center text-white text-2xl">
+                        🏷️
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Dynamic Product Label Studio</h3>
+                    <p class="text-gray-700 mb-4">
+                        Advanced product label builder with barcodes, QR codes and custom design support.
+                    </p>
+                    <a href="https://apps.odoo.com/apps/modules/18.0/ahm_label_studio"
+                       target="_blank"
+                       class="inline-flex items-center text-rose-700 font-semibold hover:text-rose-800 transition-colors">
+                        View on Odoo Apps
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- App 6: Live Log Viewer -->
+                <div class="group relative bg-gradient-to-br from-cyan-100 to-blue-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-cyan-500 text-white rounded-full text-xs font-bold">$10</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl mb-6 flex items-center justify-center text-white text-2xl">
+                        🔍
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Odoo Live Log Viewer</h3>
+                    <p class="text-gray-700 mb-4">
+                        Real-time service log streaming inside Odoo with a clean console-style interface.
+                    </p>
+                    <a href="https://apps.odoo.com/apps/modules/19.0/ahm_live_log_viewer"
+                       target="_blank"
+                       class="inline-flex items-center text-cyan-700 font-semibold hover:text-cyan-800 transition-colors">
+                        View on Odoo Apps
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mb-4"></div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Services Offered</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Custom Odoo development, implementation, and long-term support.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-400 to-purple-500 rounded-xl mb-6 flex items-center justify-center text-white text-2xl">
+                        🛠️
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Custom Module Development</h3>
+                    <p class="text-gray-700 mb-4">
+                        Specialized development of new modules and extension of existing Odoo apps.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>Website & eCommerce modules</li>
+                        <li>Accounting & reporting tools</li>
+                        <li>Custom MIS & business workflows</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-teal-500 rounded-xl mb-6 flex items-center justify-center text-white text-2xl">
+                        🚀
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Implementation & Support</h3>
+                    <p class="text-gray-700 mb-4">
+                        Help with deployment, upgrades, performance tuning and ongoing support.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>Version upgrades (v13–v19)</li>
+                        <li>Server & performance optimization</li>
+                        <li>Bug fixing and maintenance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mb-4"></div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Technical Stack</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Experience across Odoo, Python, PostgreSQL, DevOps and tooling.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-4 text-indigo-900">Languages & Odoo</h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li>Odoo v13–v19</li>
+                        <li>Python (Odoo ORM)</li>
+                        <li>PostgreSQL</li>
+                        <li>XML/QWeb</li>
+                        <li>JavaScript & jQuery</li>
+                        <li>REST API integration</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-4 text-green-900">Infrastructure & Tools</h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li>Ubuntu & Nginx</li>
+                        <li>Docker</li>
+                        <li>GitHub, GitLab CI/CD</li>
+                        <li>PgAdmin, Postman</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-4 text-purple-900">Core Competencies</h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li>Troubleshooting & debugging</li>
+                        <li>Requirement analysis</li>
+                        <li>Documentation & training</li>
+                        <li>Agile collaboration</li>
+                        <li>UI/UX focused module design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mb-4"></div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
+            </div>
+            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    As a techno-functional Odoo consultant, I focus on building solutions that are stable,
+                    easy to use and maintainable. Most of my work is on production systems where downtime
+                    and complexity are not acceptable.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    I enjoy working on end-to-end flows: from requirement analysis to module design, deployment,
+                    performance tuning and long-term support.
+                </p>
+                <div class="mt-8 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl text-sm text-gray-700">
+                    <p><strong>Location:</strong> Pakistan (Remote friendly)</p>
+                    <p><strong>Support:</strong> For app-specific issues, you can contact via Odoo Apps Store. For custom work, email or WhatsApp is best.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="py-16 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="fade-in-up">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">6+</div>
+                    <div class="text-indigo-100 text-sm">Published Apps</div>
+                </div>
+                <div class="fade-in-up" style="animation-delay:0.1s;">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">v13–19</div>
+                    <div class="text-indigo-100 text-sm">Odoo Versions</div>
+                </div>
+                <div class="fade-in-up" style="animation-delay:0.2s;">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">Production</div>
+                    <div class="text-indigo-100 text-sm">Focused Work</div>
+                </div>
+                <div class="fade-in-up" style="animation-delay:0.3s;">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">Remote</div>
+                    <div class="text-indigo-100 text-sm">Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Let's Work Together</h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Have an Odoo project or need help with one of my apps? Get in touch.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="tel:+923213412412" class="px-8 py-4 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    Call: +92 321 3412412
+                </a>
+                <a href="mailto:info@ahsonmahmood.com" class="px-8 py-4 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-lg font-semibold hover:from-purple-600 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    Email Me
+                </a>
+                <a href="https://linkedin.com/in/ahsonmahmood" target="_blank" class="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg font-semibold hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8 text-sm">
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                        Ahson Mahmood
+                    </h3>
+                    <p class="text-gray-400">
+                        Odoo Developer & App Creator building stable, production-ready solutions.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#apps" class="hover:text-indigo-400 transition-colors">Featured Apps</a></li>
+                        <li><a href="#services" class="hover:text-indigo-400 transition-colors">Services</a></li>
+                        <li><a href="#skills" class="hover:text-indigo-400 transition-colors">Technical Stack</a></li>
+                        <li><a href="#about" class="hover:text-indigo-400 transition-colors">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li>Custom Development</li>
+                        <li>App Creation</li>
+                        <li>Implementation</li>
+                        <li>Support & Maintenance</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <p class="text-sm">
+                        <a href="mailto:info@ahsonmahmood.com" class="hover:text-indigo-400 transition-colors">info@ahsonmahmood.com</a><br>
+                        <a href="tel:+923213412412" class="hover:text-indigo-400 transition-colors">+92 321 3412412</a>
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+                &copy; 2025 Ahson Mahmood. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
